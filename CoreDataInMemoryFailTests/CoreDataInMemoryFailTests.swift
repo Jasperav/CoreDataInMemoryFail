@@ -9,21 +9,8 @@ class CoreDataInMemoryFailTests: XCTestCase {
         let bundle = Bundle(for: type(of: self))
         let path = bundle.path(forResource: "InMemoryDatabase", ofType: "sqlite")!
         let url = URL(fileURLWithPath: path)
-        let fileManager = FileManager.default
-        let uuid = UUID().uuidString
-
-        let saveDirectory = fileManager
-                .urls(for: .cachesDirectory, in: .userDomainMask)[0]
-                .appendingPathComponent(uuid)
-
-        let saveLocation = saveDirectory.appendingPathComponent(url.lastPathComponent)
-
-        try! fileManager.createDirectory(at: saveDirectory, withIntermediateDirectories: false)
-        try! fileManager.copyItem(at: url, to: saveLocation)
-
         let persistentContainer = createPersistentContainer(dataModelName: "InMemoryDatabase")
-        let storeDescription = NSPersistentStoreDescription(url: saveLocation)
-
+        let storeDescription = NSPersistentStoreDescription(url: url)
 
         modify(storeDescription)
 
