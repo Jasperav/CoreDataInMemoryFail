@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="InMemoryDatabase.sqlite" uuid="c4467def-7e13-4509-8f76-d9ad4442d7b9">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/CoreDataInMemoryFailTests/InMemoryDatabase.sqlite</jdbc-url>
+    </data-source>
+  </component>
+</project>

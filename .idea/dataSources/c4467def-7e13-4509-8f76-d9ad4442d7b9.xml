@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="InMemoryDatabase.sqlite">
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.16">
+    <root id="1">
+      <ServerVersion>3.25.1</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="main">
+      <Current>1</Current>
+    </schema>
+    <collation id="3" parent="1" name="BINARY"/>
+    <collation id="4" parent="1" name="NOCASE"/>
+    <collation id="5" parent="1" name="RTRIM"/>
+    <table id="6" parent="2" name="ZPERSON"/>
+    <table id="7" parent="2" name="Z_METADATA"/>
+    <table id="8" parent="2" name="Z_MODELCACHE"/>
+    <table id="9" parent="2" name="Z_PRIMARYKEY"/>
+    <table id="10" parent="2" name="sqlite_master">
+      <System>1</System>
+    </table>
+    <column id="11" parent="6" name="Z_PK">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="12" parent="6" name="Z_ENT">
+      <Position>2</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="13" parent="6" name="Z_OPT">
+      <Position>3</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="14" parent="6" name="ZAGE">
+      <Position>4</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <key id="15" parent="6">
+      <ColNames>Z_PK</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="16" parent="7" name="Z_VERSION">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="17" parent="7" name="Z_UUID">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|0s</DataType>
+    </column>
+    <column id="18" parent="7" name="Z_PLIST">
+      <Position>3</Position>
+      <DataType>BLOB|0s</DataType>
+    </column>
+    <key id="19" parent="7">
+      <ColNames>Z_VERSION</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="20" parent="8" name="Z_CONTENT">
+      <Position>1</Position>
+      <DataType>BLOB|0s</DataType>
+    </column>
+    <column id="21" parent="9" name="Z_ENT">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="22" parent="9" name="Z_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR|0s</DataType>
+    </column>
+    <column id="23" parent="9" name="Z_SUPER">
+      <Position>3</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <column id="24" parent="9" name="Z_MAX">
+      <Position>4</Position>
+      <DataType>INTEGER|0s</DataType>
+    </column>
+    <key id="25" parent="9">
+      <ColNames>Z_ENT</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="26" parent="10" name="type">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="27" parent="10" name="name">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="28" parent="10" name="tbl_name">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="29" parent="10" name="rootpage">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="30" parent="10" name="sql">
+      <Position>5</Position>
+      <DataType>text|0s</DataType>
+    </column>
+  </database-model>
+</dataSource>
